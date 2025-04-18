@@ -1,0 +1,179 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f0f8ff; /* Light sky blue */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ff6b6b; /* Coral */
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.8;
+}
+
+main {
+    padding: 2em;
+}
+
+#search-container {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#search-container h2 {
+    color: #5856d6; /* Grape */
+    margin-bottom: 1em;
+}
+
+.search-box {
+    display: flex;
+    gap: 0.5em;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.search-box input[type="text"] {
+    flex-grow: 1;
+    padding: 0.8em;
+    border: 2px solid #5856d6;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.search-box button {
+    background-color: #00b894; /* Teal */
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #008c76;
+}
+
+.suggestions-container {
+    margin-top: 1em;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.5em;
+    display: none;
+}
+
+.suggestion-item {
+    padding: 0.7em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.suggestion-item:hover {
+    background-color: #e0f7fa; /* Light cyan */
+}
+
+#destinations-container {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#destinations-container h2 {
+    color: #ffac41; /* Amber */
+    margin-bottom: 1em;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+    margin-top: 1.5em;
+}
+
+.destination-card {
+    background-color: #e0f2f7; /* Light blue 50 */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.destination-card:hover {
+    transform: scale(1.05);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    padding: 1em;
+    margin: 0;
+    background-color: #cce5ff; /* Light blue 100 */
+    color: #1e88e5; /* Blue 600 */
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.destination-card p {
+    padding: 1em;
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.back-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 2em;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #d32f2f;
+}
+
+.hidden {
+    display: none !important;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5em 0;
+    background-color: #4a148c; /* Deep purple */
+    color: white;
+    font-size: 0.9em;
+    margin-top: 2em;
+}
+
+footer i {
+    margin-right: 0.3em;
+}

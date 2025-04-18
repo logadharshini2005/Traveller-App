@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the World!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-globe-americas"></i> Discover Wonders</h1>
+        <p>Let's explore amazing places together!</p>
+    </header>
+
+    <main>
+        <section id="search-container">
+            <h2>Where would you like to go?</h2>
+            <div class="search-box">
+                <input type="text" id="countryInput" placeholder="Enter a country (e.g., France, Japan, India)">
+                <button id="searchButton"><i class="fas fa-search"></i> Find Spots</button>
+            </div>
+            <div id="suggestions" class="suggestions-container"></div>
+        </section>
+
+        <section id="destinations-container" class="hidden">
+            <h2>Awesome Spots in <span id="country-name"></span></h2>
+            <div class="destinations-grid">
+                </div>
+            <button id="backButton" class="back-button"><i class="fas fa-arrow-left"></i> Back to Search</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Traveler Explorer. Adventure awaits!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
